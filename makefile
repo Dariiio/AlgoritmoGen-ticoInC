@@ -12,7 +12,7 @@ BINARY = programa
 	#g++ -c individuo.cpp
 
 clean:
-	rm -f $(BINARY) $(OBJS) *.gch *.out
+	rm -f $(BINARY) $(OBJS) *.gch *.out *.exe
 
 programa: main.cpp individuo.hpp
 	g++ main.cpp individuo.hpp
