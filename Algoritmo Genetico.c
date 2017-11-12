@@ -9,8 +9,8 @@
 #define MARCA_DE_DIOS 8008135
 
 
-/*creamos el modelo de nuestro individuo, tiene como "cuerpo" un vector de 5 elementos 
-en donde se guardara su informacion "genetica".	Esto sera impsortante para determinar 
+/*creamos el modelo de nuestro individuo, tiene como "cuerpo" un vector de 5 elementos
+en donde se guardara su informacion "genetica".	Esto sera impsortante para determinar
 en un comienzo la individualidad de cada ser y asegurarnos una poblacion diversa hasta que esta
 "evolucione" a una poblacion homogenea con las carcteristicas individuales deseada.
 */
@@ -47,7 +47,7 @@ void inicializarPoblacion(individuo_str * poblacion, int caso){
 					poblacion[i].vector[e] = rand()%(10-1);
 					if(poblacion[i].vector[e] == vectorModelo[e]){
 						poblacion[i].fitnes++;
-					}	
+					}
 				}
 			}
 			break;
@@ -121,14 +121,14 @@ void searchPadres(individuo_str * padres, individuo_str * poblacion){
 int main(){
 	//inicializamos la seed de eso en lo que devuelve time()
 	srand((time(NULL)));
-	
+
 	//creamos un arreglo de individuos llamado firstGeneration
 	individuo_str firstGeneration[POBLACION_MAX];
 	//creamos un arreglo para nextGeneration
 	individuo_str nextGeneration[POBLACION_MAX];
 	//Ponemos a los padres en un arreglo de PRESION elementos
 	individuo_str padres[PRESION];
-	
+
 	inicializarPoblacion(firstGeneration, 1);
 	inicializarPoblacion(nextGeneration, 0);
 	printf("PRIMERA GENERACION: \n");
