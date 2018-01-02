@@ -1,9 +1,7 @@
 #include <iostream>
 #include <time.h>
-#include "individuo.hpp"
+#include "poblacion.hpp"
 
-
-using namespace std;
 
 int main(int argc, char const *argv[])
 {
@@ -13,14 +11,15 @@ int main(int argc, char const *argv[])
 	
 	argento = {1,1,1,1,1};
 
-	Individuo persona1;
-
-	persona1.mostrar();
-	
-	persona1.calcular_fitness(argento);
+	/*Individuo persona2(argento);
 
 	cout << endl;
-	persona1.mostrar();
+
+	persona2.mostrar();*/
+
+	Poblacion arios(argento);
+
+	arios.mostrar();
 
 	int asd;
 	cin >> asd;
