@@ -47,6 +47,15 @@ void Poblacion::mostrar()
 
 void Poblacion::seleccionar()
 {
+	int pos = 0;
+	for (int i = 0; i < 10; ++i)
+	{
+		if (cuerpo[i].fitness > mejor_fitness){
+			mejor_fitness = cuerpo[i].fitness;
+			pos = i;
+		}
+	}
+	cout << pos << " | " << mejor_fitness;
 
 }
 

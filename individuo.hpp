@@ -18,6 +18,8 @@ public:
 	
 	void calcular_fitness(vector<int> argento);
 
+	int fitness;
+
 	bool seleccionado = false;
 
 private:
@@ -25,7 +27,6 @@ private:
 
 	vector<int> cuerpo;
 
-	int fitness ;
 };
 
 Individuo::Individuo()

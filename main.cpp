@@ -17,12 +17,18 @@ int main(int argc, char const *argv[])
 
 	persona2.mostrar();*/
 
-	Poblacion arios(argento);
+	
 
-	arios.mostrar();
+	int on = 1;
 
-	int asd;
-	cin >> asd;
+	while(on){
+		Poblacion arios(argento);
+
+		arios.mostrar();
+
+		arios.seleccionar();
+		cin >> on;
+	}
 
 	return 0;
 }
